@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Leaf, Moon, Sun, BarChart2 } from "lucide-react";
+import { Menu, X, Leaf, Moon, Sun } from "lucide-react";
 
 interface NavbarProps {
   isMobile: boolean | undefined;
@@ -24,7 +24,6 @@ export default function Navbar({ isMobile }: NavbarProps) {
 
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "Dashboard", path: "/dashboard" },
     { name: "Smart Scheduling", path: "/scheduling" },
     { name: "Eco Marketplace", path: "/marketplace" },
     { name: "Code Benchmarking", path: "/benchmarking" },
