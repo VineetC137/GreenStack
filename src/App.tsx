@@ -10,6 +10,7 @@ import SchedulingPage from "./pages/SchedulingPage";
 import MarketplacePage from "./pages/MarketplacePage";
 import BenchmarkingPage from "./pages/BenchmarkingPage";
 import CompilerPage from "./pages/CompilerPage";
+import DashboardPage from "./pages/DashboardPage";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/marketplace" element={<MarketplacePage />} />
           <Route path="/benchmarking" element={<BenchmarkingPage />} />
           <Route path="/compiler" element={<CompilerPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
